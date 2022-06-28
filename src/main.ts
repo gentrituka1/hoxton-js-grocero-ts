@@ -2,6 +2,17 @@ import './reset.css'
 import './style.css'
 
 
+type storeItem = {
+  id: number,
+  name: string,
+  price: number,
+  stock: number,
+  inCart: number,
+}
+
+type state = {
+  storeItem: storeItem[]
+}
 
 
 
@@ -176,6 +187,8 @@ function renderCartItems() {
     cartUl.appendChild(cartLi)
   }
 }
+
+
 function getTotal() {
   let total = 0 
   let items = getCartItems()
