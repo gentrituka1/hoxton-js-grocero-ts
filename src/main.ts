@@ -173,7 +173,7 @@ function renderCartItems() {
     })
 
     cartLi.append(itemImg, itemNameP, removeBtn, quantitySpan, addBtn)
-    cartUl.append(cartLi)
+    cartUl.appendChild(cartLi)
   }
 }
 function getTotal() {
